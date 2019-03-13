@@ -1,5 +1,15 @@
 # OAuth2
 
+## Papéis
+
+**Resource Owner**: Quem é dono do recurso, geralmente é uma pessoa que é proprietária de informações que estão armazenadas no Resource Server. Exemplo: Nós usuários do facebook, que somos donos das nossas informações pessoais.
+
+**Client**: A aplicação cliente que quer ter acesso, em nome de um Resource Owner, às informações que estão armazenadas no Resource Server. Exemplo o Spotify que quer ter acesso a nossas informações para realizar o cadastro.
+
+**Authorization Server**: A aplicação responsável por prover uma página de autenticação e autorização e realizar a autenticação e autorização em si. Exemplo o servidor do Facebook que realiza a autenticação com uma página própria e a autorização mediante o “De Acordo” do Resource Owner.
+
+**Resource Server**: O servidor protegido, onde contém as informações. Exemplo o servidor do Facebook onde contém as nossas informações pessoais.
+
 ## Tipos de Concessões
 
 ### 1. Implicit
