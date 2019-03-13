@@ -22,7 +22,7 @@ O OAuth2 em si não é uma ferramenta que você baixa, instala e configura em um
 
 ![Authorization Code](/authorization_code.png)
 
-Esse fluxo é o mais seguro e recomendado na utilização do OAuth2. Recomendado para aplicações Client que possuem a aplicação em servidor web. Dessa forma o client_secret não é exposto, pois o mesmo será enviado ao Authorization Server junto do Autorization Code para obter um Access Token a partir do servidor web, onde o código fonte da aplicação não é exposto.
+Esse fluxo é o mais seguro e recomendado na utilização do OAuth2. Recomendado para aplicações Client que possuem servidor web. Dessa forma o client_secret não é exposto, pois o mesmo será enviado ao Authorization Server junto do Autorization Code para obter um Access Token a partir do servidor web, onde o código fonte da aplicação não é exposto.
 
 ### 2. Implicit
 
