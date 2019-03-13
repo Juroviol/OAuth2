@@ -64,5 +64,6 @@ Existem dois tipos de atores:
 **OIDC provider** é o que pode autenticar e prover informações do usuário autenticado ao cliente.
 
 Exemplos reais são o Spotify e o Facebook.  
+
 O Spotify é o OIDC client, pois o mesmo além de delegar a autenticação e autorização a utilização dos recursos para o Facebook, ele também necessita das informações básicas do usuário autenticado e autorizado.
 O Facebook é o OIDC provider, pois é quem autentica e solicita ao usuário permissão para acesso de informações e também provê as informações pessoais do usuário autenticado.
