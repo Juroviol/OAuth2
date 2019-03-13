@@ -1,5 +1,7 @@
 # OAuth2
 
+O OAuth2 especifica as regras, passos e formas de interação que diferentes atores em um processo de autorização devem realizar para construir um fluxo de autorização mais seguro possível.
+
 ## Papéis
 
 **Resource Owner**: Quem é dono do recurso, geralmente é uma pessoa que é proprietária de informações que estão armazenadas no Resource Server. Exemplo: Nós usuários do facebook, que somos donos das nossas informações pessoais.
@@ -40,7 +42,7 @@ O OAuth2 somente provê dois tipos de tokens:
 - Access Token
 - Refresh Token
 
-O **Access Token** é o que é preciso para ter acessos a recursos protegidos
+O **Access Token** é o que é preciso para ter acessos a recursos protegidos.  
 O **Refresh Token** é o que é preciso para obter um novo Access Token.
 
-É importante observar que o mesmo não oferece uma regra para obter dados de usuário nativamente.
+É importante observar que o mesmo não oferece uma regra para obter dados de usuário nativamente. O protocolo **OpenID Connect** especifica como obter os dados do usuário autenticado.
