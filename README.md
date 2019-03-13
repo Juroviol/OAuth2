@@ -26,7 +26,7 @@ Esse fluxo é o mais seguro e recomendado na utilização do OAuth2. Recomendado
 
 ### 2. Implicit
 
-![Implicit](/implicit.png)
+![Implicit](/implicit_grant_flow.png)
 
 Esse fluxo é utilizado em aplicações Client que não possuem um backend próprio, que seu código fonte pode ser facilmente exposto, e portanto não podem armazenar o client_secret com segurança, apesar de ser menos seguro. Geralmente essas aplicações são SPAs, construídas em JavaScript. 
 
