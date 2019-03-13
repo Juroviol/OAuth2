@@ -59,9 +59,9 @@ O **Refresh Token** é o que é preciso para obter um novo Access Token.
 
 ## OpenID Connect
 
-o OpenID Connect é uma extensão ao OAuth2 o qual especifica regras que possa fornecer dados do usuário autenticado e autorizado, através do ID TOKEN, o qual o OAuth2 por si só não provê, pois o mesmo só prevê a disponibilização dos tokens  somente o ACCESS E REFRESH TOKEN.
+o OpenID Connect é uma extensão ao OAuth2 o qual especifica regras que possa fornecer dados do usuário autenticado e autorizado, através do ID TOKEN, o qual o OAuth2 por si só não provê, pois o mesmo só prevê a disponibilização dos tokens ACCESS TOKEN E REFRESH TOKEN.
 
-Existem dois tipos de atores:
+O OpenID Connect diferencia cliente e provedor com as nomenclaturas:
 
 - OIDC client
 - ODIC provider
@@ -73,3 +73,7 @@ Exemplos reais são o Spotify e o Facebook.
 
 O __Spotify é o OIDC client__, pois o mesmo além de delegar a autenticação e autorização a utilização dos recursos para o Facebook, ele também necessita das informações básicas do usuário autenticado e autorizado.
 O __Facebook é o OIDC provider__, pois é quem autentica e solicita ao usuário permissão para acesso de informações e também provê as informações pessoais do usuário autenticado.
+
+### OAuth2 e OpenID Connect
+
+Objetivamente, o OAuth2 estabelece os passos e regras para se emitir um Acess Token, o OpenID Connect para se emitir um Id Token.
