@@ -2,7 +2,9 @@
 
 O OAuth2 especifica as regras, passos e formas de interação que diferentes atores em um processo de autorização devem realizar para construir um fluxo de autorização mais seguro possível.
 
-Graças a essas regras é possível ser autorizado em nome próprio ou em nome de outro proprietário a acessar recursos protegidos.
+Graças a essa especificação é possível ser autorizado em nome próprio ou em nome de outro proprietário a acessar recursos protegidos. Muito útil em aplicações distribuídas que compartilham uma mesma API/recurso, ou no caso da disponibilização de uma API para terceiros, garantindo todo o controle do quanto de informações será acessado e até quando.
+
+O OAuth2 em si não é uma ferramenta que você baixa, instala e configura em um servidor. São apenas regras que provedores desse protocolo devem implementar. Portanto é preciso implementar por si só, ou utilizar provedores já construídos e disponíveis no mercado.
 
 ## Papéis
 
