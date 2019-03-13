@@ -31,3 +31,16 @@ Neste caso a aplicação Client é altamente confiável, bastando que a mesma se
 ![Resource Owner Credentials Flow](/resource_owner_password_credentials.png)
 
 Neste caso a aplicação Client é altamente confiável, bastando que a mesma seja cadastrada antecipadamente no Autorization Server, onde será gerado o client_id e client_secret. Todavia, o recurso protegido será acessado com as credenciais de um usuário. Em posse dessas quatro informações client_id, client_secret, username, password é possível solicitar um access token.
+
+
+## Tipos de Tokens
+
+O OAuth2 somente provê dois tipos de tokens:
+
+- Access Token
+- Refresh Token
+
+O **Access Token** é o que é preciso para ter acessos a recursos protegidos
+O **Refresh Token** é o que é preciso para obter um novo Access Token.
+
+É importante observar que o mesmo não oferece uma regra para obter dados de usuário nativamente.
