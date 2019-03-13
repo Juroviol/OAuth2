@@ -18,7 +18,9 @@ O OAuth2 em si não é uma ferramenta que você baixa, instala e configura em um
 
 ## Tipos de Concessões
 
-### 1. Implicit
+### 1. Authorization Code
+
+### 2. Implicit
 
 ![Implicit](/implicit.png)
 
@@ -26,13 +28,13 @@ Esse fluxo é utilizado em aplicações Client que não possuem um backend próp
 
 Ao contrário do [Authorization Code Grant Flow](#authorization_code_grant_flow), onde após a autenticação e autorização no Authorization Server pelo Resource Owner, é obtido um Authorization Code único, nesse caso, o Authorization Server retorna imediatamente o Access Token.
 
-### 2. Client Credentials
+### 3. Client Credentials
 
 ![Client Credentials Flow](/client_credentials.png)
 
 Neste caso a aplicação Client é altamente confiável, bastando que a mesma seja cadastrada antecipadamente no Autorization Server onde será gerado o client_id e client_secret. Em posse dessas duas informações é possível solicitar um access token.
 
-### 3. Resource Owner Password Credentials
+### 4. Resource Owner Password Credentials
 
 ![Resource Owner Credentials Flow](/resource_owner_password_credentials.png)
 
