@@ -2,6 +2,8 @@
 
 O OAuth2 especifica as regras, passos e formas de interação que diferentes atores em um processo de autorização devem realizar para construir um fluxo de autorização mais seguro possível.
 
+Graças a essas regras é possível ser autorizado em nome próprio ou em nome de outro proprietário a acessar recursos protegidos.
+
 ## Papéis
 
 **Resource Owner**: Quem é dono do recurso, geralmente é uma pessoa que é proprietária de informações que estão armazenadas no Resource Server. Exemplo: Nós usuários do facebook, que somos donos das nossas informações pessoais.
