@@ -18,7 +18,11 @@ O OAuth2 em si não é uma ferramenta que você baixa, instala e configura em um
 
 ## Tipos de Concessões
 
-### 1. Authorization Code
+### 1. Authorization Code <a href="authorization_code_grant_flow"></a>
+
+![Authorization Code](/authorization_code.png)
+
+Esse fluxo é o mais seguro e recomendado na utilização do OAuth2. 
 
 ### 2. Implicit
 
