@@ -50,3 +50,7 @@ O **Access Token** é o que é preciso para ter acessos a recursos protegidos.
 O **Refresh Token** é o que é preciso para obter um novo Access Token.
 
 É importante observar que o mesmo não oferece uma regra para obter dados de usuário nativamente. O protocolo **OpenID Connect** especifica como obter os dados do usuário autenticado.
+
+## OpenID Connect
+
+o OpenID Connect é uma extensão ao OAuth2 o qual especifica regras que possa fornecer dados do usuário autenticado e autorizado, através do ID TOKEN, o qual o OAuth2 por si só não provê, pois o mesmo só prevê a disponibilização dos tokens  somente o ACCESS E REFRESH TOKEN.
