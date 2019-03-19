@@ -81,3 +81,11 @@ Objetivamente, o OAuth2 estabelece os passos e regras para se emitir um Acess To
 **ID Token**: Tecnicamente é um JSON Web Token (JWT) que contém atributos de perfil de um usuário. O ID Token é utilizado pela aplicação Client para obter informações do usuário, como nome, e-mail, e etc, tipicamente utilizado para exibir em tela.
 
 **Access Token**: é uma credencial que pode ser utilizado para acessar recursos protegidos.
+
+## FAQ 
+
+***1. Como Google, Facebook sabem que já foi autenticado uma vez para não mostrar a tela de autenticação?***
+R: Cookies. Sim, os famosos cookies. Após a autenticação os Authorization Servers eles guardam um ou mais Cookies associados ao domínio do Authorization Server com dados de autenticação do usuário, para que o Authorization Server consiga gerar tokens de acesso ou de identificação novamente.
+
+***2. Mas se eu pegar os Cookies de um outro usuário e colocar no meu navegador, eu vou acessar a conta dele?***
+R. Sim, você irá acessar. Porém o protocolo HTTPS criptografa todo o tráfego de troca de informacções entre o navegador e o servidor, portanto mesmo que tenha alguém que consiga ver toda a troca de tráfego, os dados estarão criptografados e não será possível visualizar o conteúdo do Cookie. A única forma é o "hacker" obter os Cookies direto do seu browser, mas para isso ele terá que ter acesso ao seu dispositivo.
