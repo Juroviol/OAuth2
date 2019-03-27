@@ -88,10 +88,10 @@ A [especificação](https://openid.net/specs/openid-connect-discovery-1_0.html#P
 
 |  Endpoint | Descrição   |
 |---|---|
-| Metadata  | |
-| Authorize | |
-| Token     | |
-| JWKS      | |
+| Metadata  | Endpoint que retorna um JSON contendo informações sobre o que o OIDC Provider atende e o endereço dos demais endpoints. Algumas aplicações utilizam também o JSON retornado para configurar automaticamente o Identity Provider.  |
+| Authorize | Endpoint para iniciar o fluxo OAuth2 para obter o token desejado. |
+| Token     | Endpoint utilizado para obter o ID Token previsto pelo OpenID Connect, contendo as informações do usuário o qual se refere o token. É nesse token que é retornado as informações que o cliente solicitou através dos "claims". |
+| JWKS      |
 | User Info | |
 
 ## FAQ 
