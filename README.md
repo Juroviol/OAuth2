@@ -18,7 +18,7 @@ O OAuth2 em si não é uma ferramenta que você baixa, instala e configura em um
 
 ## Tipos de Concessões
 
-### 1. Authorization Code <a href="authorization_code_grant_flow"></a>
+### 1. Authorization Code <a href="authorization_code"></a>
 
 ![Authorization Code](/authorization_code.png)
 
