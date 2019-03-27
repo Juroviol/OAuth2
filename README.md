@@ -30,7 +30,7 @@ Esse fluxo é o mais seguro e recomendado na utilização do OAuth2. Recomendado
 
 Esse fluxo é utilizado em aplicações Client que não possuem um backend próprio, que seu código fonte pode ser facilmente exposto, e portanto não podem armazenar o client_secret com segurança, apesar de ser menos seguro. Geralmente essas aplicações são SPAs, construídas em JavaScript. 
 
-Ao contrário do [Authorization Code Grant Flow](#authorization_code_grant_flow), onde após a autenticação e autorização no Authorization Server pelo Resource Owner, é obtido um Authorization Code único, nesse caso, o Authorization Server retorna imediatamente o Access Token.
+Ao contrário do [Authorization Code Grant Flow](#authorization_code), onde após a autenticação e autorização no Authorization Server pelo Resource Owner, é obtido um Authorization Code único, nesse caso, o Authorization Server retorna imediatamente o Access Token.
 
 ### 3. Client Credentials
 
