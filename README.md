@@ -82,6 +82,18 @@ Objetivamente, o OAuth2 estabelece os passos e regras para se emitir um Acess To
 
 **Access Token**: é uma credencial que pode ser utilizado para acessar recursos protegidos.
 
+### Endpoints
+
+A [especificação](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata) do OAuth2 + OpenID Connect prevê os seguintes endpoints que devem ser disponibilizados pelo OIDC Provider. Abaixo a abordadem dos principais
+
+|  Endpoint | Descrição   |
+|---|---|
+| Metadata  | |
+| Authorize | |
+| Token     | |
+| JWKS      | |
+| User Info | |
+
 ## FAQ 
 
 ***1. Como Google, Facebook sabem que já foi autenticado uma vez para não mostrar a tela de autenticação?***  
