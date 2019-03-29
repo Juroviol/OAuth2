@@ -98,7 +98,19 @@ A [especificação](https://openid.net/specs/openid-connect-discovery-1_0.html#P
 
 O JWT (JSON Web Token) é uma forma de trocar informações entre sistemas de forma simples, segura e independente de linguagem os quais os sistemas são desenvolvidos. O próprio JWT contém as informações que serão trocadas, não atuando somente como uma "chave de autorização" para posterior acesso de informações protegidas.
 
-O JWT é constituído por uma sequência de caracteres do base64 que é composto por três partes separados por um caractere ponto. A primeira parte, a esquerda do primeiro caractere ponto é o "header", que é onde ficam as informações referente a como o JWT foi assinado, por exemplo o algoritmo utilizado. A parte do meio é o "payload", aqui contém algumas informações reservadas que são adicionadas quando o JWT é criado e que serão utilizadas posteriomente por quem emitiu e ou pelo destinatário. Nessa parte do JWT também que são inseridas as informações que se deseja trocar com o destinatário. A última parte do JWT é a "signature", aqui contém uma sequência de caracteres que representam a assinatura do JWT que serão utilizadas pelo destinatário, para saber se esse JWT foi emitido por quem diz que o emitiu. 
+O JWT é constituído por uma sequência de caracteres do base64 que é composto por três partes separados por um caractere ponto.
+
+De maneira simples, o mesmo pode ser ilustrado dessa forma
+
+```
+header.payload.signature
+```
+
+A primeira parte, a esquerda do primeiro caractere ponto é o "header", que é onde ficam as informações referente a como o JWT foi assinado, por exemplo o algoritmo utilizado. 
+
+A parte do meio é o "payload", aqui contém algumas informações reservadas que são adicionadas quando o JWT é criado e que serão utilizadas posteriomente por quem emitiu e ou pelo destinatário. Nessa parte do JWT também que são inseridas as informações que se deseja trocar com o destinatário.
+
+A última parte do JWT é a "signature", aqui contém uma sequência de caracteres que representam a assinatura do JWT que serão utilizadas pelo destinatário, para saber se esse JWT foi emitido por quem diz que o emitiu. 
 
 O JWT é seguro, pois através da assinatura é possível verificar se o JWT sofreu alguma modificação no meio da troca de informações ou se alguém tentou representar um.
 
