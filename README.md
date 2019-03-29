@@ -84,7 +84,7 @@ Objetivamente, o OAuth2 estabelece os passos e regras para se emitir um Acess To
 
 ### Endpoints
 
-A [especificação](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata) do OAuth2 + OpenID Connect prevê os seguintes endpoints que devem ser disponibilizados pelo OIDC Provider. Abaixo a abordadem dos principais
+A [especificação](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata) do OAuth2 + OpenID Connect prevê os seguintes endpoints que devem ser disponibilizados pelo OIDC Provider. Abaixo a abordadem dos principais:
 
 |  Endpoint | Descrição   |
 |---|---|
@@ -93,6 +93,10 @@ A [especificação](https://openid.net/specs/openid-connect-discovery-1_0.html#P
 | Token     | Endpoint utilizado para obter o ID Token previsto pelo OpenID Connect, contendo também as informações do usuário e dados da autenticação que foi realizada. |
 | JWKS      | Endpoint que retorna o JWKS, que nada mais é que um JSON contendo informações da chave pública e do algoritmo que o os tokens são assinados. Os OIDC Client utilizam esse endpoint para obter as informações necessárias para poderem validar a autenticidade dos tokens emitidos pelo Authorization Server. |
 | User Info | Endpoint que retorna as informações da pessoa o qual o ID Token se refere. As informações que são retornadas dependem do "scope" o qual foi fornecido pelo cliente ao obter os tokens. O "scope" define a quantidade de informações que serão retornadas. |
+
+## JWT
+
+O JWT (Json Web Token) é uma forma de trocar informações entre sistemas de forma simples, segura e independente de linguagem os quais os sistemas são desenvolvidos.
 
 ## FAQ 
 
