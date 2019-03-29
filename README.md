@@ -96,7 +96,7 @@ A [especificação](https://openid.net/specs/openid-connect-discovery-1_0.html#P
 
 ## JWT
 
-O JWT (Json Web Token) é uma forma de trocar informações entre sistemas de forma simples, segura e independente de linguagem os quais os sistemas são desenvolvidos.
+O JWT (JSON Web Token) é uma forma de trocar informações entre sistemas de forma simples, segura e independente de linguagem os quais os sistemas são desenvolvidos.
 
 ## FAQ 
 
