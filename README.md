@@ -64,7 +64,7 @@ o OpenID Connect é uma extensão ao OAuth2 o qual especifica regras que possa f
 O OpenID Connect diferencia cliente e provedor com as nomenclaturas:
 
 - OIDC client
-- ODIC provider
+- OIDC provider
 
 **OIDC client** é quem delega a autenticação para outro, no caso um OIDC provider.
 **OIDC provider** é o que pode autenticar e prover informações do usuário autenticado ao cliente.
