@@ -57,7 +57,7 @@ O **Refresh Token** é o que é preciso para obter um novo Access Token.
 
 É importante observar que o mesmo não oferece uma regra para obter dados de usuário nativamente. O protocolo **OpenID Connect** especifica como obter os dados do usuário autenticado.
 
-## OpenID Connect
+# OpenID Connect
 
 o OpenID Connect é uma extensão ao OAuth2 o qual especifica regras que possa fornecer dados do usuário autenticado e autorizado, através do ID TOKEN, o qual o OAuth2 por si só não provê, pois o mesmo só prevê a disponibilização dos tokens ACCESS TOKEN E REFRESH TOKEN.
 
@@ -74,7 +74,7 @@ Exemplos reais são o Spotify e o Facebook.
 O __Spotify é o OIDC client__, pois o mesmo além de delegar a autenticação e autorização a utilização dos recursos para o Facebook, ele também necessita das informações básicas do usuário autenticado e autorizado.
 O __Facebook é o OIDC provider__, pois é quem autentica e solicita ao usuário permissão para acesso de informações e também provê as informações pessoais do usuário autenticado.
 
-### OAuth2 e OpenID Connect
+## OAuth2 e OpenID Connect
 
 Objetivamente, o OAuth2 estabelece os passos e regras para se emitir um Acess Token, o OpenID Connect para se emitir um ID Token.
 
@@ -82,7 +82,7 @@ Objetivamente, o OAuth2 estabelece os passos e regras para se emitir um Acess To
 
 **Access Token**: é uma credencial que pode ser utilizado para acessar recursos protegidos.
 
-### Endpoints
+## Endpoints
 
 A [especificação](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata) do OAuth2 + OpenID Connect prevê os seguintes endpoints que devem ser disponibilizados pelo OIDC Provider. Abaixo a abordadem dos principais:
 
@@ -94,7 +94,7 @@ A [especificação](https://openid.net/specs/openid-connect-discovery-1_0.html#P
 | JWKS      | Endpoint que retorna o JWKS, que nada mais é que um JSON contendo informações da chave pública e do algoritmo que o os tokens são assinados. Os OIDC Client utilizam esse endpoint para obter as informações necessárias para poderem validar a autenticidade dos tokens emitidos pelo Authorization Server. |
 | User Info | Endpoint que retorna as informações da pessoa o qual o ID Token se refere. As informações que são retornadas dependem do "scope" o qual foi fornecido pelo cliente ao obter os tokens. O "scope" define a quantidade de informações que serão retornadas. |
 
-## JWT
+# JWT
 
 O JWT (JSON Web Token) é uma forma de trocar informações entre sistemas de forma simples, segura e independente de linguagem os quais os sistemas são desenvolvidos. O próprio JWT contém as informações que serão trocadas, não atuando somente como uma "chave de autorização" para posterior acesso de informações protegidas.
 
@@ -104,7 +104,7 @@ O JWT é seguro, pois através da assinatura é possível verificar se o JWT sof
 
 Importante enfatizar que o JWT pode ser lido por qualquer pessoa, visto que ele trafega no formato base 64, o qual seu conteúdo pode ser facilmente revelado, por isso é importante sempre trafegá-lo através do protocolo HTTPS, pois o base 64 é criptografado nesse protocolo impedindo que algúem possa revelar o seu conteúdo.
 
-## FAQ 
+# FAQ 
 
 ***1. Como Google, Facebook sabem que já foi autenticado uma vez para não mostrar a tela de autenticação?***  
 R: Cookies. Sim, os famosos cookies. Após a autenticação os Authorization Servers eles guardam um ou mais Cookies associados ao domínio do Authorization Server com dados de autenticação do usuário, para que o Authorization Server consiga gerar authorization codes ou tokens de acesso dependendo do fluxo OAuth2 que o cliente solicitou.
