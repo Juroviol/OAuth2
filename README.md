@@ -90,9 +90,9 @@ A [especificação](https://openid.net/specs/openid-connect-discovery-1_0.html#P
 |---|---|
 | Metadata  | Endpoint que retorna um JSON contendo informações sobre o que o OIDC Provider atende e o endereço dos demais endpoints. Algumas aplicações utilizam também o JSON retornado para configurar automaticamente o Identity Provider.  |
 | Authorize | Endpoint para iniciar o fluxo OAuth2 para obter o token desejado. Com exceção do [Authorization Code Grant Type Flow](##1-authorization-code-) que retorna o Authorization Code, os demais flows do OpenID Connect retornam o Access Token e o ID Token. |
-| Token     | Endpoint utilizado para obter o ID Token previsto pelo OpenID Connect, contendo as informações do usuário o qual se refere o token. É nesse token que é retornado as informações que o cliente solicitou através dos "claims". |
+| Token     | Endpoint utilizado para obter o ID Token previsto pelo OpenID Connect, contendo também as informações do usuário e dados da autenticação que foi realizada. |
 | JWKS      | Endpoint que retorna o JWKS, que nada mais é que um JSON contendo informações da chave pública e do algoritmo que o os tokens são assinados. Os OIDC Client utilizam esse endpoint para obter as informações necessárias para poderem validar a autenticidade dos tokens emitidos pelo Authorization Server. |
-| User Info | |
+| User Info | Endpoint que retorna as informações da pessoa o qual o ID Token se refere. As informações que são retornadas dependem do "scope" o qual foi fornecido pelo cliente ao obter os tokens. O "scope" define a quantidade de informações que serão retornadas. |
 
 ## FAQ 
 
