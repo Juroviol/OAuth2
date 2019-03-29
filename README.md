@@ -78,7 +78,7 @@ O __Facebook é o OIDC provider__, pois é quem autentica e solicita ao usuário
 
 Objetivamente, o OAuth2 estabelece os passos e regras para se emitir um Acess Token, o OpenID Connect para se emitir um ID Token.
 
-**ID Token**: Tecnicamente é um JSON Web Token (JWT) que contém atributos de perfil de um usuário. O ID Token é utilizado pela aplicação Client para obter informações do usuário, como nome, e-mail, e etc, tipicamente utilizado para exibir em tela.
+**ID Token**: Tecnicamente é um JSON Web Token ([JWT](#jwt)) que contém atributos de perfil de um usuário. O ID Token é utilizado pela aplicação Client para obter informações do usuário, como nome, e-mail, e etc, tipicamente utilizado para exibir em tela.
 
 **Access Token**: é uma credencial que pode ser utilizado para acessar recursos protegidos.
 
